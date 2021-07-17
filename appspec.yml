@@ -13,8 +13,8 @@ hooks:
 #      timeout: 300
 #      runas: root
   ApplicationStart:
-    - location: install
     - location: start
+#    - location: start
       timeout: 600
       runas: root
 #  ApplicationStop:
