@@ -1,3 +1,8 @@
 #!/bin/bash
 sudo su
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+source ~/.bashrc
+nvm --version
+nvm install 15.0.1
+cd /home/ec2-user/juice/
 pm2 delete 0
