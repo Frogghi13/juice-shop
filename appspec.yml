@@ -3,7 +3,7 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/juice
-#hooks:
+hooks:
 #  BeforeInstall:
 #    - location: scripts/install_dependencies.sh
 #      timeout: 300
@@ -12,11 +12,11 @@ files:
 #    - location: scripts/change_permissions.sh
 #      timeout: 300
 #      runas: root
-#  ApplicationStart:
-#    - location: scripts/start_server.sh
+  ApplicationStart:
+    - location: start
 #    - location: scripts/create_test_db.sh
-#      timeout: 300
-#      runas: root
+      timeout: 300
+      runas: root
 #  ApplicationStop:
 #    - location: scripts/stop_server.sh
 #      timeout: 300
