@@ -17,7 +17,7 @@ hooks:
 #    - location: start
       timeout: 1000
       runas: root
-  ApplicationStop:
-    - location: stop
-      timeout: 300
-      runas: root
+#  ApplicationStop:
+#    - location: stop
+#      timeout: 300
+#      runas: root
