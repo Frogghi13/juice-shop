@@ -5,6 +5,5 @@ source ~/.bashrc
 nvm --version
 nvm install 15.0.1
 cd /home/ec2-user/juice/
-npm -v
-#npm install
-#npm start
+npm install
+npm start
