@@ -5,4 +5,5 @@ source ~/.bashrc
 nvm --version
 nvm install 15.0.1
 cd /home/ec2-user/juice/
+npm install
 pm2 delete 0
