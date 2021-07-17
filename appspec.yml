@@ -8,13 +8,13 @@ hooks:
 #    - location: install
 #      timeout: 300
 #      runas: root
-  AfterInstall:
-    - location: install
-      timeout: 300
-      runas: root
+#  AfterInstall:
+#    - location: install
+#      timeout: 300
+#      runas: root
   ApplicationStart:
+    - location: install
     - location: start
-#    - location: scripts/create_test_db.sh
       timeout: 600
       runas: root
 #  ApplicationStop:
